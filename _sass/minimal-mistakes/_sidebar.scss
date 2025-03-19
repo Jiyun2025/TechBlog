@@ -38,10 +38,10 @@
 
   > * {
     /* sidebar left top & right margin */
-    // margin-top:1.2em;
+     margin-top:1.2em;
     /* 2022.01.25 avatar img margin top decrease */
-    // margin-top: 2.5em;
-    margin-top: 0.8em;
+    margin-top: 2.5em;
+    //margin-top: 0.8em; // 크기변경
     margin-bottom: 1em;
     margin-left: 5%;
     margin-right: 5%;
@@ -128,7 +128,8 @@
   }
 
   img {
-    max-width: 80px;
+    max-width: 100px; // 크기 
+    border-radius: 50%; //테두리
     align-items: center;
     background-attachment: fixed;
     margin-top: 25px;
