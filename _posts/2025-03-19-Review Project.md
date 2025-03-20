@@ -1,13 +1,13 @@
 ---
 title: "Review Project: Beginning of a Deep Learning Project in 2025"
-excerpt: "Notice"
+excerpt: "📍 Notice"
 
 categories:
-  - Notice
+  - 📍 Notice
 tags:
   - [MLReview,DLReview, PRJ_25, Notice]
 
-permalink: /Notice/Review Project/
+permalink: /📍 Notice/Review Project/
 
 toc: true
 toc_sticky: true
