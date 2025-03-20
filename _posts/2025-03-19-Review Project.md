@@ -7,7 +7,7 @@ categories:
 tags:
   - [MLReview,DLReview, PRJ_25, Notice]
 
-permalink: /Notice/Beginning of a Deep Learning Project in 2025/
+permalink: /Notice/Review Project/
 
 toc: true
 toc_sticky: true
