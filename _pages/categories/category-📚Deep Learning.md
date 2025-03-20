@@ -1,9 +1,9 @@
 ---
 title: "📚Deep Learning"
 layout: category
-permalink: /categories/📚Deep Learning"/
+permalink: /categories/📚 Deep Learning/
 author_profile: true
-taxonomy: 📚Deep Learning"
+taxonomy: 📚Deep Learning
 sidebar:
   nav: "categories"
 ---
