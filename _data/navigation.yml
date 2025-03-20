@@ -18,11 +18,11 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "Deep Learning"
-    url: /categories/Deep Learning/
-  - title: "Machine Learning"
-    url: /categories/Machine Learning/
-  - title: "Project"
-    url: /categories/Project/
-  - title: "Python"
-    url: /categories/Python/
+  - title: "1️⃣ Deep Learning"
+    url: /categories/1️⃣ Deep Learning/
+  - title: "2️⃣ Machine Learning"
+    url: /categories/2️⃣ Machine Learning/
+  - title: "3️⃣ Project"
+    url: /categories/3️⃣ Project/
+  - title: "4️⃣ Python"
+    url: /categories/4️⃣ Python/
