@@ -76,13 +76,13 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
-  font-size: 1.4rem;
-  font-style: normal;
+  font-size: 1.4rem; //사이즈 크게
+  font-style: normal; // 이탤릭 없앰
 }
 
 .site-subtitle {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.8rem; //사이즈 크게
 }
 
 .masthead__menu {
