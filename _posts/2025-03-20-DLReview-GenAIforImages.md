@@ -26,12 +26,12 @@ last_modified_at: 2025-03-20
 - **Variational autoencoder**
 - **Generative adversarial networks**
 
-### Autoencoder 
+#### Autoencoder 
 
 
 ---
 
-### VAE 
+#### VAE 
 
 <img width="521" alt="image" src="https://github.com/user-attachments/assets/c5c926ab-0b59-4558-a53f-3ed687f75604" />
     
@@ -45,7 +45,7 @@ last_modified_at: 2025-03-20
 onec we train we have z, all we can do is twicking it all of it and generate it someting similar 
 How can we twick the z ( z is long vector) 
 
-#### How can we introduce some ‘randomness’ into the generation process?
+##### How can we introduce some ‘randomness’ into the generation process?
 
 - Instead of learning the latent vectors directly, can we learn the
 distribution of each element? = approximate with mean 𝜇𝜇 and standard deviation
@@ -53,36 +53,40 @@ distribution of each element? = approximate with mean 𝜇𝜇 and standard devi
 
 
 
-#### How VAE Works 
+##### How VAE Works 
+
   1. **Encoder**
      - Take input data (ex.image) and compresses it into a latent representation.
      - Outputs two values: mean (μ) and standard deviation (σ), which define the distribution of the latent variable z
 
        ✅ latent representation : compressing data and only taking important data 
  
-  2. **Sampling**
+  3. **Sampling**
       - Samples the latent variable z from the distribution defined by μ and σ
       - This adds randomness, allowing the generation of diverse outputs
  
-  3. **Decoder**
+  4. **Decoder**
        - Take the sampled latent variable z and reconstructs the original data (ex.an image)
        - 
-  5. **Lossfunction** : 
+  5. **Lossfunction**
 
        - ✅ reparameterization : it is part of the encoder since it is before Z
+
+
 ---
 
-### GANs
+
+#### GANs
 - One of the Genertive model that can create realistic fake data. 
 - The idea of Gans is concept that one model is **Generator** and another is **Discriminator**
 - Main Components of GANs : **Generator** , **Discriminator**
-  #### **Generator** :
-  >####                - Generate fake data from random noise.
-  >####                - Its goal is to generate data that looks real
+##### **Generator** :
+  >#####                - Generate fake data from random noise.
+  >#####                - Its goal is to generate data that looks real
 
- #### **Discriminator** :
-  >####                - Judge whther the input is real of fake.
-  >####                - Its goal is to accurately distinguish between real and fake data
+##### **Discriminator** :
+  >#####                - Judge whther the input is real of fake.
+  >#####               - Its goal is to accurately distinguish between real and fake data
 
  📌 They are doing competition,both networks improve over time through this competition.
 
