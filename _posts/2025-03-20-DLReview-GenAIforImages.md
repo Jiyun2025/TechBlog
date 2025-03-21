@@ -27,7 +27,12 @@ last_modified_at: 2025-03-20
 - **Generative adversarial networks**
 
 ### Autoencoder 
-  
+
+
+---
+
+### VAE 
+
 <img width="521" alt="image" src="https://github.com/user-attachments/assets/c5c926ab-0b59-4558-a53f-3ed687f75604" />
     
     
@@ -46,9 +51,7 @@ How can we twick the z ( z is long vector)
 distribution of each element? = approximate with mean 𝜇𝜇 and standard deviation
 - We assume the distributions are Norma
 
----
 
-### VAE  
 
   #### How VAE Works 
   1. Encoder
