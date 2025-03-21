@@ -18,9 +18,9 @@ last_modified_at: 2025-03-20
 
 ## 🦥 DLReview_Day1 : Generative AI for Images 
 
-### Supervised Learning & Unsupervised Lerning 
+### 1️⃣ Supervised Learning & Unsupervised Lerning 
 
-### 3 deep-learning based generative models
+### 2️⃣ 3 deep-learning based generative models
 
 - **Autoencoder** 
 - **Variational autoencoder**
@@ -45,7 +45,7 @@ last_modified_at: 2025-03-20
 onec we train we have z, all we can do is twicking it all of it and generate it someting similar 
 How can we twick the z ( z is long vector) 
 
-  #### How can we introduce some ‘randomness’ into the generation process?
+#### How can we introduce some ‘randomness’ into the generation process?
 
 - Instead of learning the latent vectors directly, can we learn the
 distribution of each element? = approximate with mean 𝜇𝜇 and standard deviation
@@ -53,7 +53,7 @@ distribution of each element? = approximate with mean 𝜇𝜇 and standard devi
 
 
 
-  #### How VAE Works 
+#### How VAE Works 
   1. **Encoder**
      - Take input data (ex.image) and compresses it into a latent representation.
      - Outputs two values: mean (μ) and standard deviation (σ), which define the distribution of the latent variable z
@@ -69,8 +69,7 @@ distribution of each element? = approximate with mean 𝜇𝜇 and standard devi
        - 
   5. **Lossfunction** : 
 
- 
-        ✅ reparameterization : it is part of the encoder since it is before Z
+       - ✅ reparameterization : it is part of the encoder since it is before Z
 ---
 
 ### GANs
@@ -80,8 +79,8 @@ distribution of each element? = approximate with mean 𝜇𝜇 and standard devi
   #### **Generator** :
   >####                - Generate fake data from random noise.
   >####                - Its goal is to generate data that looks real
-  
-  #### **Discriminator** :
+
+ #### **Discriminator** :
   >####                - Judge whther the input is real of fake.
   >####                - Its goal is to accurately distinguish between real and fake data
 
