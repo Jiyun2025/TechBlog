@@ -18,20 +18,20 @@ last_modified_at: 2025-03-20
 
 ## 🦥 DLReview_Day1 : Generative AI for Images 
 
-  ### 1️⃣ Supervised Learning & Unsupervised Lerning 
+### 1️⃣ Supervised Learning & Unsupervised Lerning 
 
-  ### 2️⃣ 3 deep-learning based generative models
+### 2️⃣ 3 deep-learning based generative models
 
 - **Autoencoder** 
 - **Variational autoencoder**
 - **Generative adversarial networks**
 
-  ### Autoencoder 
+### Autoencoder 
 
 
 ---
 
-  ### VAE 
+### VAE 
 
 <img width="521" alt="image" src="https://github.com/user-attachments/assets/c5c926ab-0b59-4558-a53f-3ed687f75604" />
     
