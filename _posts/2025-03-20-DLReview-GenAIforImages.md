@@ -1,5 +1,5 @@
 ---
-title: "Generative AI for Images "
+title: "DLReview_Day1 : Generative AI for Images "
 excerpt: " VAEs and GANs / how diffusion models are trained and sampling is conducted to generate image"
 
 categories:
@@ -16,7 +16,7 @@ date: 2025-03-20
 last_modified_at: 2025-03-20
 ---
 
-## 🦥 Generative AI for Images
+## 🦥 DLReview_Day1 : Generative AI for Images 
 
 ### Supervised Learning & Unsupervised Lerning 
 
@@ -54,22 +54,23 @@ distribution of each element? = approximate with mean 𝜇𝜇 and standard devi
 
 
   #### How VAE Works 
-  1. Encoder
+  1. **Encoder**
      - Take input data (ex.image) and compresses it into a latent representation.
-     - Outputs two values: mean (μ) and standard deviation (σ), which define the distribution           of the latent variable z
-     - ✅ latent representation : compressing data and only taking important data 
+     - Outputs two values: mean (μ) and standard deviation (σ), which define the distribution of the latent variable z
+
+       ✅ latent representation : compressing data and only taking important data 
  
-  2. Sampling
+  2. **Sampling**
       - Samples the latent variable z from the distribution defined by μ and σ
       - This adds randomness, allowing the generation of diverse outputs
  
-  3. Decoder
+  3. **Decoder**
        - Take the sampled latent variable z and reconstructs the original data (ex.an image)
        - 
-  5. Lossfunction : 
+  5. **Lossfunction** : 
 
  
-   - ✅ reparameterization : it is part of the encoder since it is before Z
+        ✅ reparameterization : it is part of the encoder since it is before Z
 ---
 
 ### GANs
