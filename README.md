@@ -1,45 +1,6 @@
 ## 🦥 `Minimal Mistakes theme customized by choiiis`
 
-📎 **블로그 바로 가기**
-[`https://choiiis.github.io/`](https://choiiis.github.io/)
 
----
-
-fork 해서 사용하시기 편하게 변경해서 새로 올려봅니다.  
-편하게 사용하시고, fork 하실 때 `star` 하나만 눌러주세용 :)
-
-fork 후 설정이 필요한 사항들은 아래 내용을 참고하세요!
-
-### ▪ 블로그 기본 정보 세팅
-
-[_config.yml]
-
-```yml
-# plum skin 활용하여 색상 설정함. 변경하려면 _sass/minimal-mistakes/skins/_plum.scss 에서 변경하거나
-# 해당 디렉토리 내의 다른 테마로 변경 가능 (minimal-mistakes 기본 제공 테마)
-minimal_mistakes_skin: "plum" # "default" "air", "aqua", ...
-
-# Site Settings
-locale: "ko-KR" #"en-US"
-title: "Blog Name Here" # 상단 헤더에 보이는 블로그 타이틀
-title_separator: "&#124;"
-subtitle: # site tagline that appears below site title in masthead
-name: "your name here" # 블로그 닉네임 설정
-description: "OOOOO DevLog" # 블로그 설명
-url: "https://github-account.github.io" # 블로그 URL
-baseurl: # the subpath of your site, e.g. "/blog"
-repository: "github-account/github-account.github.io" # GitHub Repo 이름
-# logo : # 상단 헤더의 블로그 타이틀 앞에 로고 추가하고 싶을 경우 사용
-
----
-# Site Author (Home에서 해당 내용은 숨김 상태)
-author:
-  name: "your name here" # 블로그 닉네임
-  avatar: "/assets/images/meee.png" # 블로그 프로필 사진
-  #   bio              : "hi all!"
-  # location         : "Seoul, Korea"
-  # email            : "youremailhere@xxxxxx.com"
-```
 
 ### ▪ favicon 변경
 
