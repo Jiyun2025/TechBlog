@@ -20,6 +20,8 @@ last_modified_at: 2022-03-21
 
 
 ![image](https://github.com/user-attachments/assets/81a23e43-01de-4192-bf7c-6f1016a318ad)
+![image](https://github.com/user-attachments/assets/2192d128-34a2-4603-b4d8-dfc866a2f3b2)
+
 
 **1️⃣ Supervised Learning** is a type of machine learning where the model learns from <ins>labeled data</ins>.
 > 
