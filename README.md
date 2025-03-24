@@ -1,5 +1,3 @@
-## 🦥 `Minimal Mistakes theme customized by choiiis`
-
 
 
 ### ▪ favicon 변경
