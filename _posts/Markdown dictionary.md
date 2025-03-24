@@ -17,68 +17,274 @@ last_modified_at: 2025-03-19
 ---
 
 # Markdown for writing blog 
+---
+
+## ✅ Introduction to Markdown
+
+💡 Markdown is a lightweight markup language that allows you to write documents using simple syntax.  
+It is widely used in GitHub, Jekyll blogs, and technical documentation.
 
 ---
 
-## 📚 1.1 Basic Markdown 
+## ✅ Headings
 
-### ✅ Markdonw
-- `# Title`, `**Bold**`, `*Tilt*`, `~~strikethrough~~`,`***bold and italic*** or ___bold and italic___`
-- List: `- Item`, `1. Item`
-- Link: `[Text](URL)`
-- Image: `![alt](url)`
+💡 Use `#` to create headings.  
+The number of `#` symbols determines the heading level.
 
-### ✅ Table 
 ```markdown
-| Name   | Age  | Job              |
-|--------|------|------------------|
-| Sara   | 30   |  Analyst         |
-| Peter  | 30   | Academic Advisor |
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
 ```
-### ✅ Headers
 
-`# H1`
-`## H2`
-`### H3`
-`#### H4`
-`##### H5`
-`###### H6`
+### 🔽 Output
 
-### ✅ Lists - Ordered list
-1. First item  
-2. Second item  
-3. Third item
+> # Heading 1  
+> ## Heading 2  
+> ### Heading 3  
+> #### Heading 4  
+> ##### Heading 5  
+> ###### Heading 6
+
+---
+
+## ✅ Horizontal Rule
+
+💡 Use `---` or `***` to insert a horizontal divider.
+
+```markdown
+---
+```
+
+### 🔽 Output
+
+---
+
+---
+
+## ✅ Text Styling
+
+💡 Apply styles like bold, italic, and strikethrough to your text.
+
+```markdown
+This is the **bold** text, and this is the _italic_ text.  
+Let's do ~~strikethrough~~.
+```
+
+### 🔽 Output
+
+This is the **bold** text, and this is the _italic_ text.  
+Let's do ~~strikethrough~~.
+
+---
+
+## ✅ Blockquotes
+
+💡 Use `>` to create blockquotes.  
+Helpful for highlighting important notes or references.
+
+```markdown
+> Don't forget to code your dream.
+```
+
+### 🔽 Output
+
+> Don't forget to code your dream.
+
+---
+
+## ✅ Bullet List
+
+💡 Use `-` or `*` to create unordered lists.  
+Indent to create sub-items.
+
+```markdown
+Fruits:
+
+- Apple
+- Lemon
+  - Orange
+  - Grape
+```
+
+### 🔽 Output
+
+Fruits:
+
+- Apple
+- Lemon
+  - Orange
+  - Grape
+
+---
+
+## ✅ Numbered List
+
+💡 Use numbers followed by a dot to create ordered lists.  
+Numbers don't have to be sequential — they'll be auto-numbered.
+
+```markdown
+Numbers:
+
+1. First
+2. Second
+3. Third
+```
+
+### 🔽 Output
+
+Numbers:
+
+1. First  
+2. Second  
+3. Third
+
+---
+
+## ✅ Links
+
+💡 Use `[text](URL)` format to create a hyperlink.
+
+```markdown
+Click [here](https://example.com/)
+```
+
+### 🔽 Output
+
+Click [here](https://example.com/)
+
+---
+
+## ✅ Images
+
+💡 Use `![alt text](image URL)` format to insert an image.
+
+```markdown
+![logo](/assets/images/meee.png)
+```
+
+### 🔽 Output
+
+![man](/assets/images/meee.png)
+
+---
+
+## ✅ Tables
+
+💡 Use `|` and `-` to create tables.  
+You can align columns using the following syntax:
+
+- :---: → center alignment  
+- :--- → left alignment  
+- ---: → right alignment
+
+```markdown
+| Header | CenterAligned | LeftAligned | RightAligned |
+|--------|:-------------:|------------|-------------:|
+| Cell1  |     Cell2     | Cell3      |       Cell4  |
+| Cell1  |     Cell2     | Cell3      |       Cell4  |
+```
+
+### 🔽 Output
+
+| Header | CenterAligned | LeftAligned | RightAligned |
+|--------|:-------------:|------------|-------------:|
+| Cell1  |     Cell2     | Cell3      |       Cell4  |
+| Cell1  |     Cell2     | Cell3      |       Cell4  |
+
+---
+
+## ✅ Code Block
+
+💡 Use triple backticks (```) to define a block of code.  
+Specify the language for syntax highlighting.
+
+```markdown
+To print message in the console, use `console.log('your message')` and..
+```
+
+````markdown
+```python
+def hello():
+    print("Hello, Markdown!")
+```
+````
+
+### 🔽 Output
+
+To print message in the console, use `console.log('your message')` and..
+
+```python
+def hello():
+    print("Hello, Markdown!")
+```
+
+---
+
+## ✅ Check List
+
+💡 Use `- [ ]` for unchecked and `- [x]` for checked items.  
+GitHub renders checkboxes you can interact with.
+
+```markdown
+- [x] Completed task
+- [ ] Task in progress
+- [ ] Task to be added
+```
+
+### 🔽 Output
+
+- [x] Completed task  
+- [ ] Task in progress  
+- [ ] Task to be added
+"""
 
 ### ✅ Lists - Unordered list
-`- Item`
-`* Item`
-`+ Item`
+
+```
+- Item
+* Item
++ Item
+```
+
+### 🔽 Output
+- Item
+* Item
++ Item
 
 ### ✅ Nested Lists 
+
+```
 - Item 1
   - Subitem 1
     - Sub-subitem
-
-### ✅ Blockquotes
-> This is a quote.
->> Nested quote.
->>
-### ✅ Link
-[Link text](https://example.com)
-
-### ✅ Inline code
-`code`
-
-### ✅ Code blocks
-<details>
-<summary>3 backticks (`)</summary>
-```language
-print("Hello, Markdown!")
 ```
-</details>
+### 🔽 Output
 
+- Item 1
+  - Subitem 1
+    - Sub-subitem
+   
+      
 ### ✅ Collabsible section
+```
+<details>
+  <summary>Click to expand</summary>
 
+  Hidden content goes here!
+
+</details>
+```
+
+### 🔽 Output
 <details>
   <summary>Click to expand</summary>
 
@@ -86,17 +292,14 @@ print("Hello, Markdown!")
 
 </details>
 
-### ✅ Task lists
-- [x] Task complete
-- [ ] Task incomplete
-
 ### ✅ Mentions & References (GitHub specific)
 @username
 #issue-number
 
 
 
-### Quick Emoji
+
+### ✅Jiyun's Quick Emoji Dictionary
 
 ⚠️ Important: This action is irreversible.  
 🚨 Warning: Make sure to back up your data.  
