@@ -1,5 +1,5 @@
 ---
-title: "Markdown Dictionary"
+title: "📓Markdown Dictionary"
 excerpt: "📍 Notice"
 
 categories:
