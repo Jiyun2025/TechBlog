@@ -1,6 +1,5 @@
 
-
-### ▪ favicon 변경
+### favicon 변경
 
 1. [https://www.favicon-generator.org/](https://www.favicon-generator.org/) 접속하여 원하는 이미지를 favicon으로 생성
 2. 생성된 파일 `assets/images/favicon/` 디렉토리에 저장  
