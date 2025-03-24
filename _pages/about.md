@@ -13,6 +13,14 @@ comments: false
   <img src="https://komarev.com/ghpvc/?username=Jiyun2025&label=Profile%20views&color=0e75b6&style=flat" alt="Jiyun2025" />
 </p>
 
+<h3 align="center">💻 GitHub Stats & Activity</h3>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Jiyun2025&show_icons=true&theme=tokyonight" />
+  <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats-pi-orpin.vercel.app?user=Jiyun2025&theme=dark-minimalist&border_radius=4.6&date_format=M%20j%5B%2C%20Y%5D&exclude_days=Sun%2CSat" alt="GitHub Streak" /></a>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jiyun2025&layout=compact&theme=tokyonight" />
+</p>
+
 <h3 align="center">💼 Aspiring Data Analyst & Data Scientist</h3>
 
 <p align="center">
