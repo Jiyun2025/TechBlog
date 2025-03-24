@@ -7,7 +7,7 @@ categories:
 tags:
   - [DLReview, Diffusion Model]
 
-permalink: /📚 Deep Learning/post-name-here/
+permalink: /📚 Deep Learning/DLReview_Day1/
 
 toc: true
 toc_sticky: true
