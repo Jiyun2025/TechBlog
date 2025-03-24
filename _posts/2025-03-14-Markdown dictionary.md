@@ -1,5 +1,5 @@
 ---
-title: "Review Project: Beginning of a Deep Learning Project in 2025"
+title: "Markdown Dictionary"
 excerpt: "📍 Notice"
 
 categories:
