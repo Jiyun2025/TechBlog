@@ -1,5 +1,5 @@
-
 ---
+
 title: "MLReview_Day2-Basic concepts"
 excerpt: "Baysian"
 
@@ -15,6 +15,7 @@ toc_sticky: true
 
 date: 2025-03-21
 last_modified_at: 2022-03-21
+
 ---
 
 ## 🦥 Baysian Methods for Supervised, Semi-Supervised, and Unsupervised Learning
