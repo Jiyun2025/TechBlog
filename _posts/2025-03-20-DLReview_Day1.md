@@ -7,7 +7,7 @@ categories:
 tags:
   - [DLReview, Diffusion Model]
 
-permalink: /📚 Deep Learning/DLReview_Day1/
+permalink: /📚 Deep Learning/post-name-here/
 
 toc: true
 toc_sticky: true
@@ -36,19 +36,19 @@ last_modified_at: 2025-03-20
 <img width="521" alt="image" src="https://github.com/user-attachments/assets/c5c926ab-0b59-4558-a53f-3ed687f75604" />
     
     
-    - the end of the encoder you are going to get really densed one. 
-    - can connect to decoder 
-    - it is able to reproduce original image 
-    - at z factor, we can extract (compressing) / using MSE means 
+- At the end of the encoder, you get a highly compressed representation (latent vector z) 
+  - This latent vertor z connects to the decoder
+  - The z factor is obtained by compressing the input data, often using techniques like Mean Squared Error (MSE) for optimization.
 
+- Once model is trained, we have the latent vector z
+  - We can tweak z(which is a long vector) to generate new, similar images.
+  - By adjusting the values in z, we can explore variations in the generated ouput 
 
-onec we train we have z, all we can do is twicking it all of it and generate it someting similar 
-How can we twick the z ( z is long vector) 
 
 ##### How can we introduce some ‘randomness’ into the generation process?
 
 - Instead of learning the latent vectors directly, can we learn the
-distribution of each element? = approximate with mean 𝜇𝜇 and standard deviation
+distribution of each element? = approximate with mean 𝜇 and standard deviation
 - We assume the distributions are Norma
 
 
@@ -58,6 +58,9 @@ distribution of each element? = approximate with mean 𝜇𝜇 and standard devi
   1. **Encoder**
      - Take input data (ex.image) and compresses it into a latent representation.
      - Outputs two values: mean (μ) and standard deviation (σ), which define the distribution of the latent variable z
+       - 평균(μ): 그림의 주요 특징을 대표하는 값이에요. 예를 들어, 강아지 그림이라면 귀, 꼬리, 털 같은 특징을 나타내는 숫자예요.
+
+       - 표준편차(σ): 그림이 얼마나 다양할 수 있는지를 나타내는 값이에요. 예를 들어, 강아지 그림이라면 귀 모양이 조금씩 달라질 수 있                   는 정도를 나타내요.
 
        ✅ latent representation : compressing data and only taking important data 
  
@@ -67,11 +70,13 @@ distribution of each element? = approximate with mean 𝜇𝜇 and standard devi
  
   4. **Decoder**
        - Take the sampled latent variable z and reconstructs the original data (ex.an image)
-       - 
+       - The goal is make the reconstructed data as close as possible to the original input
   5. **Lossfunction**
-
+       - **Reconstruction Loss** : Measures how well the decoder reconstructs the original data
+       - **Regularization Term** : 
        - ✅ reparameterization : it is part of the encoder since it is before Z
 
+**Key Idea** : VAE learns to compress data into a latent space and then reconstruct it, while ensuring the latent space is structured and can generate new, similar data. 
 
 ---
 
