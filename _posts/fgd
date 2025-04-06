@@ -1,0 +1,25 @@
+---
+title: "[Project1] Network Analysis for Improving Emergency Medical Access"
+excerpt: "GIS project"
+
+categories:
+  - 📊 Project
+tags:
+  - [Python,GIS]
+
+permalink: /📊 Project/GIS project1/
+
+toc: true
+toc_sticky: true
+
+date: 2024-05-08
+last_modified_at: 2022-07-24
+---
+
+## 🦥 Network Analysis for Improving Emergency Medical Access
+
+### Prime Process
+1. Data Collection and Preparation
+2. Network Analysis
+3. Route solver - Hospital Location
+4. Results by Route 
