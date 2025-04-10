@@ -21,7 +21,7 @@ last_modified_at: 2025-04-06
 ### Prime Process
 1. Data Cleaning - Python
 2. Data EDA - SQL 
-3. Visualization - Tableau Click [here]([https://example.com/](https://public.tableau.com/views/Project1WalmartAnalysis_Jiyun/1_SalesbyPeriod?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
+3. Visualization -  Click [Tableau Dashboard]([https://example.com/](https://public.tableau.com/views/Project1WalmartAnalysis_Jiyun/1_SalesbyPeriod?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
 
 
 ```
