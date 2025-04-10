@@ -21,49 +21,60 @@ last_modified_at: 2025-04-06
 ### Prime Process
 1. Data Cleaning - Python
 2. Data EDA - SQL 
-3. Visualization - Tableau
+3. Visualization - Tableau Click [here]([https://example.com/](https://public.tableau.com/views/Project1WalmartAnalysis_Jiyun/1_SalesbyPeriod?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
 
 
+```
 
 SELECT * 
 FROM walmart.data
---
+```
+```
 
 SELECT COUNT(*)
 FROM walmart.data;
 
---
-# how many different payment type we have ? 
+```
 
+
+# how many different payment type we have ? 
+```
 SELECT payment_method, COUNT(*)
 FROM walmart.data
 GROUP BY payment_method
+```
 
--- 
 
-
+```
 SELECT COUNT(DISTINCT branch) 
 FROM walmart.data
+```
 
+```
 SELECT MAX(quantity) 
 FROM walmart.data
+```
 
+```
 SELECT MIN(quantity) 
 FROM walmart.data
+```
 
 #Walmart Business Problem
 # 1. Analyze payment Methods and Sales 
  Q1. What are the differnet payment methods, and how many transactions 
  and items were sold with each method? 
 
+```
 SELECT payment_method, COUNT(*) AS number_of_Payments,SUM(quantity) AS number_of_Quantity_sold
 FROM walmart.data
 GROUP BY payment_method;
+```
 
 # Q2: Identify the highest-rated category in each branch
 # Display the branch, category, and avg rating
 
---
+```
 WITH ranked AS (
     SELECT 
         branch,
@@ -76,8 +87,8 @@ WITH ranked AS (
 SELECT branch, category, avg_rating
 FROM ranked
 WHERE rn = 1;
-
---
+```
+```
 SELECT branch, category, avg_rating
 FROM (
     SELECT branch, category, AVG(rating) AS avg_rating
@@ -94,9 +105,10 @@ WHERE avg_rating = (
     WHERE s.branch = t.branch
 )
 ORDER BY branch ASC;
-
+```
 -- Q3: Identify the busiest day for each branch based on the number of transactions
 
+```
 SELECT t.branch, t.day_name, t.no_transactions
 FROM (
     SELECT branch, DAYNAME(STR_TO_DATE(date, '%d/%m/%Y')) AS day_name, COUNT(*) AS no_transactions
@@ -113,26 +125,33 @@ JOIN (
     GROUP BY branch
 ) m ON t.branch = m.branch AND t.no_transactions = m.max_no_transactions
 ORDER BY t.branch ;
-
+```
 -- Q4: Calculate the total quantity of items sold per payment method
-
+```
 SELECT payment_method, SUM(quantity) AS Total_Quantity_of_Items
 FROM walmart.data
 GROUP BY payment_method
-
+```
 -- Q5: Determine the average, minimum, and maximum rating of categories for each city
+
+```
 SELECT category, city, AVG(rating) as avg_rate , MAX(rating) as max_rate, MIN(rating) as min_rate
 FROM walmart.data
 GROUP BY city, category 
-
+```
 
 -- Q6: Calculate the total profit for each category
+
+```
 SELECT category, FLOOR(SUM(total)) as total_profit
 FROM walmart.data 
 GROUP BY category
 ORDER BY total_profit DESC;
+```
 
 -- Q7: Determine the most common payment method for each branch
+
+```
 SELECT branch, payment_method, method_count
 FROM (
     SELECT branch, payment_method, 
@@ -143,8 +162,11 @@ FROM (
 ) ranked
 WHERE rn = 1
 ORDER BY branch;
+```
 
 -- Q8: Categorize sales into Morning, Afternoon, and Evening shifts
+
+```
 SELECT branch, COUNT(*) AS num_invoices,
        CASE 
            WHEN TIME(time) BETWEEN '06:00:00' AND '11:59:59' THEN 'Morning'
@@ -155,7 +177,9 @@ SELECT branch, COUNT(*) AS num_invoices,
 FROM walmart. data
 GROUP BY branch, shift
 ORDER BY branch, num_invoices DESC;
+```
 
+```
 SELECT
     branch,
     CASE 
@@ -167,21 +191,25 @@ SELECT
 FROM walmart. data
 GROUP BY branch, shift
 ORDER BY branch, num_invoices DESC;
+```
+
 -- advanced : find which shift has more total profit? 
  
 -- Q9: Identify the 5 branches with the highest revenue decrease ratio from last year to current year (e.g., 2022 to 2023)
+
+```
 SELECT branch, YEAR(date) as Year, SUM(total) as Yearly_revenue 
 FROM walmart. data
 GROUP BY branch, YEAR(date);
-
 SELECT 
     branch,
     SUM(CASE WHEN YEAR(date) = 2022 THEN total ELSE 0 END) AS revenue_2022,
     SUM(CASE WHEN YEAR(date) = 2023 THEN total ELSE 0 END) AS revenue_2023
 FROM walmart.data
 GROUP BY branch;
+```
 
---
+```
 
 WITH revenue_2022 AS (
     SELECT 
@@ -209,9 +237,9 @@ JOIN revenue_2023 AS r2023 ON r2022.branch = r2023.branch
 WHERE r2022.revenue > r2023.revenue
 ORDER BY revenue_decrease_ratio DESC
 LIMIT 5;
+```
 
---
-
+```
 WITH revenue_2022 AS (
     SELECT 
         branch,
@@ -238,7 +266,9 @@ LEFT JOIN revenue_2023 AS r2023 ON r2022.branch = r2023.branch
 ORDER BY revenue_decrease_ratio DESC
 LIMIT 5;
 
---
+```
+
+```
 
 SELECT 
     branch,
@@ -258,3 +288,4 @@ FROM walmart.data
 GROUP BY branch
 ORDER BY revenue_decrease_ratio DESC
 LIMIT 5;
+```
