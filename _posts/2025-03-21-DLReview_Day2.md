@@ -1,14 +1,31 @@
-Why does a VAE include a KL divergence term in its loss function, and what does it enforce?
+---
+title: "DLReview_Day2 : VAE "
+excerpt: " VAEs and GANs / how diffusion models are trained and sampling is conducted to generate image"
 
-*
- to regularize the latent space. This term enforces that the learned latent distribution stays close to a predefined prior distribution, ensuring a smooth and continuous latent space that facilitates effective generative sampling.
-What is the objective function of a GAN, and how does it reflect the adversarial nature of the model?
+categories:
+  - 📚 Deep Learning
+tags:
+  - [DLReview, Diffusion Model]
 
-*
-the discriminator and generator are engaged in a minimax game, where the success of one directly hinders the performance of the other, encapsulating the adversarial dynamics at the core of GANs.
-What is the role of the forward and reverse diffusion processes in a denoising diffusion probabilistic model (DDPM)?
+permalink: /📚 Deep Learning/DLReview_Day2/
 
-*
-The forward process gradually adds noise to the data, while the reverse process iteratively removes this noise to generate new samples from the learned data distribution.
-Provide an example of an urban application of diffusion models. 
-*
+toc: true
+toc_sticky: true
+
+date: 2025-03-21
+last_modified_at: 2025-03-21
+---
+
+## 🦥 DLReview_Day2 : Generative AI for Images - 2
+
+
+### Why does a VAE include a KL divergence term in its loss function, and what does it enforce?
+
+
+### What is the objective function of a GAN, and how does it reflect the adversarial nature of the model?
+
+
+### What is the role of the forward and reverse diffusion processes in a denoising diffusion probabilistic model (DDPM)?
+
+
+### Provide an example of an urban application of diffusion models. 
