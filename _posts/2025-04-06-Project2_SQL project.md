@@ -37,7 +37,7 @@ FROM walmart.data;
 ```
 
 
-# how many different payment type we have ? 
+### how many different payment type we have ? 
 ```
 SELECT payment_method, COUNT(*)
 FROM walmart.data
@@ -60,9 +60,9 @@ SELECT MIN(quantity)
 FROM walmart.data
 ```
 
-#Walmart Business Problem
-# 1. Analyze payment Methods and Sales 
- Q1. What are the differnet payment methods, and how many transactions 
+# Walmart Business Problem
+## 1. Analyze payment Methods and Sales 
+### Q1. What are the differnet payment methods, and how many transactions 
  and items were sold with each method? 
 
 ```
@@ -71,8 +71,8 @@ FROM walmart.data
 GROUP BY payment_method;
 ```
 
-# Q2: Identify the highest-rated category in each branch
-# Display the branch, category, and avg rating
+## Q2: Identify the highest-rated category in each branch
+### Display the branch, category, and avg rating
 
 ```
 WITH ranked AS (
@@ -106,7 +106,7 @@ WHERE avg_rating = (
 )
 ORDER BY branch ASC;
 ```
--- Q3: Identify the busiest day for each branch based on the number of transactions
+### Q3: Identify the busiest day for each branch based on the number of transactions
 
 ```
 SELECT t.branch, t.day_name, t.no_transactions
@@ -126,13 +126,13 @@ JOIN (
 ) m ON t.branch = m.branch AND t.no_transactions = m.max_no_transactions
 ORDER BY t.branch ;
 ```
--- Q4: Calculate the total quantity of items sold per payment method
+### Q4: Calculate the total quantity of items sold per payment method
 ```
 SELECT payment_method, SUM(quantity) AS Total_Quantity_of_Items
 FROM walmart.data
 GROUP BY payment_method
 ```
--- Q5: Determine the average, minimum, and maximum rating of categories for each city
+### Q5: Determine the average, minimum, and maximum rating of categories for each city
 
 ```
 SELECT category, city, AVG(rating) as avg_rate , MAX(rating) as max_rate, MIN(rating) as min_rate
@@ -140,7 +140,7 @@ FROM walmart.data
 GROUP BY city, category 
 ```
 
--- Q6: Calculate the total profit for each category
+### Q6: Calculate the total profit for each category
 
 ```
 SELECT category, FLOOR(SUM(total)) as total_profit
@@ -149,7 +149,7 @@ GROUP BY category
 ORDER BY total_profit DESC;
 ```
 
--- Q7: Determine the most common payment method for each branch
+### Q7: Determine the most common payment method for each branch
 
 ```
 SELECT branch, payment_method, method_count
@@ -164,7 +164,7 @@ WHERE rn = 1
 ORDER BY branch;
 ```
 
--- Q8: Categorize sales into Morning, Afternoon, and Evening shifts
+### Q8: Categorize sales into Morning, Afternoon, and Evening shifts
 
 ```
 SELECT branch, COUNT(*) AS num_invoices,
@@ -195,7 +195,7 @@ ORDER BY branch, num_invoices DESC;
 
 -- advanced : find which shift has more total profit? 
  
--- Q9: Identify the 5 branches with the highest revenue decrease ratio from last year to current year (e.g., 2022 to 2023)
+### Q9: Identify the 5 branches with the highest revenue decrease ratio from last year to current year (e.g., 2022 to 2023)
 
 ```
 SELECT branch, YEAR(date) as Year, SUM(total) as Yearly_revenue 
