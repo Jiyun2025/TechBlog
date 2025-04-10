@@ -62,8 +62,7 @@ FROM walmart.data
 
 # Walmart Business Problem
 ## 1. Analyze payment Methods and Sales 
-### Q1. What are the differnet payment methods, and how many transactions 
- and items were sold with each method? 
+### Q1. What are the differnet payment methods, and how many transactions and items were sold with each method? 
 
 ```
 SELECT payment_method, COUNT(*) AS number_of_Payments,SUM(quantity) AS number_of_Quantity_sold
